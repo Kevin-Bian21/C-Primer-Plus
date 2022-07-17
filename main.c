@@ -10,7 +10,6 @@ strlen()获取字符串的长度。
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-using namespace std;
 
 int gcd(int a, int b);
 
@@ -18,14 +17,11 @@ void func(char *str) {
     printf("%d\n",sizeof(str));
     printf("%d\n",strlen(str));
 }
-struct name {
+typedef struct name {
     char str;
     int num;
-
     short x;
-
-
-};
+}name;
 /**
  * strcpy()接受两个字符串指针作为参数，可以把指向源字符串的
     第2个指针声明为指针、数组名或字符串常量；而指向源字符串副本的第1个
